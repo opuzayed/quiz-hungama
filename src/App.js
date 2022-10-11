@@ -11,6 +11,7 @@ function App() {
         children:[
           {
             path:'/',
+            
             element:<Home></Home>
           },
           {
