@@ -5,7 +5,7 @@ const Header = () => {
   return (
    <div className="header">
       <div>
-        <h1>Quiz Hungama</h1>
+        <h1 style={{color:'darkblue'}}>Quiz Hungama</h1>
       </div>
       <div className="header-link">
         <Link to="/">Home</Link>

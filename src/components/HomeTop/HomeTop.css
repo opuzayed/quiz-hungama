@@ -1,0 +1,22 @@
+.container {
+  background-image: url('https://ak6.picdn.net/shutterstock/videos/658318/thumb/1.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  float: relative;
+  width: 50%;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+.content {
+  position: absolute;
+  font-family: "Lucida Grande", Tahoma;
+  font-size: 20px;
+  font-weight: lighter;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+}

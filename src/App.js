@@ -1,7 +1,9 @@
-import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './layout/Main';
 import Home from './components/Home/Home';
+import Topics from './components/Topics/Topics';
+import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
 
 function App() {
   const router = createBrowserRouter([
@@ -11,17 +13,28 @@ function App() {
         children:[
           {
             path:'/',
-            
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader: async () =>{
+              return fetch('https://openapi.programming-hero.com/api/quiz')
+            }
           },
           {
-
+            path:'/topics',
+            element:<Topics></Topics>
+          },
+          {
+            path:'/statistics',
+            element:<Statistics></Statistics>
+          },
+          {
+            path:'/blog',
+            element:<Blog></Blog>
           }
         ]
       }
   ]);
   return (
-    <div className="App">
+    <div>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
