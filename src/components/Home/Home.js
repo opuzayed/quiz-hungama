@@ -6,10 +6,6 @@ import './Home.css';
 const Home = () => {
     const quizs = useLoaderData();
     const newQuizes = quizs.data;
-    
-    // const handleQuiz = (id) => {
-    //    return id;
-    // }
     return (
        <div>
             <HomeTop></HomeTop>

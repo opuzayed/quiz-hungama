@@ -1,9 +1,9 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Categories.css";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Topic.css';
+const Topic = ({topic}) => {
 
-const Categories = ({ quiz }) => {
-  const { id, logo, name, total } = quiz;
+    const { id, logo, name, total } = topic;
   const navigate = useNavigate();
     const handleNavigate = () =>{
         navigate(`/quizdetails/${id}`)
@@ -22,4 +22,4 @@ const Categories = ({ quiz }) => {
   );
 };
 
-export default Categories;
+export default Topic;

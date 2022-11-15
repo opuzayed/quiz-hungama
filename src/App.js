@@ -22,7 +22,10 @@ function App() {
           },
           {
             path:'/topics',
-            element:<Topics></Topics>
+            element:<Topics></Topics>,
+            loader: async () =>{
+              return fetch('https://openapi.programming-hero.com/api/quiz')
+            }
           },
           {
             path:'/statistics',
