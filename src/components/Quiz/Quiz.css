@@ -1,0 +1,30 @@
+.quiz-card {
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto 15px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.quiz-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.quiz-head h4 {
+  width: 95%;
+}
+
+.quiz-head span {
+  width: 5%;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-head span:hover {
+  color: #79c796;
+}

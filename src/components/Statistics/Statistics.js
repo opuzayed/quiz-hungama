@@ -15,10 +15,9 @@ const Statistics = () => {
   const newData = statData.data;
   return (
     <ResponsiveContainer width="100%" height="100%">
-    <div>
-      
+      <div>
         <AreaChart
-        className="chart-style"
+          className="chart-style"
           width={700}
           height={400}
           data={newData}
@@ -34,7 +33,7 @@ const Statistics = () => {
           <YAxis />
           <Tooltip />
         </AreaChart>
-    </div>
+      </div>
     </ResponsiveContainer>
   );
 };

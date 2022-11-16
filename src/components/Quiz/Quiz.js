@@ -1,7 +1,9 @@
 import React from "react";
 import toast, { Toaster } from "react-hot-toast";
-
-const Quiz = ({ q }) => {
+import { FaEye } from "react-icons/fa";
+import "./Quiz.css";
+const Quiz = (props) => {
+  const { q, index } = props;
   console.log(q);
   const { question, options } = q;
   const onChangeValue = (event) => {
@@ -10,13 +12,23 @@ const Quiz = ({ q }) => {
     if (targetValue === val) {
       toast.success("Correct Answer");
     } else {
-      toast.success("Wrong Answer");
+      toast.error("Wrong Answer");
     }
   };
+
+  const onClickValue = (event) => {
+    const rightval = q.correctAnswer;
+    toast.success(rightval);
+  };
   return (
-    <div>
-      <div>
-        <h4>{question}</h4>
+    <div className="quiz-card">
+      <div className="quiz-head">
+        <h4>
+          Quiz {index + 1}: {question}
+        </h4>
+        <span onClick={onClickValue}>
+          <FaEye />
+        </span>
       </div>
       <div onChange={onChangeValue}>
         <div className="form-check">

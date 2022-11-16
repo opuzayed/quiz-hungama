@@ -1,10 +1,9 @@
-.container {
-  background-image: url('https://ak6.picdn.net/shutterstock/videos/658318/thumb/1.jpg');
+.top-bg {
+  background-image: url("https://ak6.picdn.net/shutterstock/videos/658318/thumb/1.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  float: relative;
-  width: 50%;
-  height: 300px;
+  height: 80vh;
   margin: 20px auto;
   border-radius: 8px;
 }
