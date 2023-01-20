@@ -1,6 +1,3 @@
-Project Name : GigaTech
-Live Link :
-Objectives – 
-•	Setting Up The Environment
-•	Adding and importing bootstrap, router and other needed components
-•	Calling API data and show casing as instructed
+# You can test your knowledge on particular topic through quizs.
+
+### live site : https://fabulous-marigold-3b5fc2.netlify.app/ 
